@@ -1,7 +1,6 @@
 package modelo;
 
-import static org.junit.Assert.assertEquals;
-
+import org.junit.Assert;
 import org.junit.Test;
 
 public class PokemonTest {
@@ -10,7 +9,7 @@ public class PokemonTest {
 	public void SiCreoUnPokemonYLeAsignoComoNombreMaxiYPosteriormenteLePreguntoSuNombreDevuelveMaxitest() {
 		Pokemon maxiPokemon = new Pokemon();
 		maxiPokemon.setName("maxi");
-		assertEquals("maxi", maxiPokemon.getName());
+		Assert.assertEquals("maxi", maxiPokemon.getName());
 	}
 
 }
