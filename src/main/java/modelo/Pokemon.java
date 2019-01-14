@@ -4,8 +4,8 @@ public class Pokemon {
 	private String name;
 	private String tipo;
 	private String defensa;
-	private int ataque=0;
-	private int nivel=0;
+	private Integer ataque=0;
+	private Integer nivel=0;
 	
 	public void setName(String name) {
 		this.name = name;
