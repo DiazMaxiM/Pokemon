@@ -10,6 +10,8 @@ public class PokemonTest {
 		Pokemon maxiPokemon = new Pokemon();
 		maxiPokemon.setName("maxi");
 		Assert.assertEquals("maxi", maxiPokemon.getName());
+		maxiPokemon.setTipo("gato");
+		maxiPokemon.getTipo();
 	}
 
 }
