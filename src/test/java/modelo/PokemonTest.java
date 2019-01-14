@@ -16,12 +16,13 @@ public class PokemonTest {
 	public void PreguntoElTipo() {
 		Pokemon maxiPokemon = new Pokemon();
 		maxiPokemon.setTipo("gato");
-		maxiPokemon.getTipo();
+		Assert.assertEquals("gato", maxiPokemon.getTipo());
 	}
 	
 	@Test
 	public void SubirNivel() {
 		Pokemon maxiPokemon = new Pokemon();
-		maxiPokemon.setNivel(maxiPokemon.getNivel()+1);
+		maxiPokemon.SubirNivel();
+		Assert.assertEquals(new Integer(1), maxiPokemon.getNivel());
 	}
 }

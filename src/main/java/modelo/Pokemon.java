@@ -7,6 +7,10 @@ public class Pokemon {
 	private Integer ataque=0;
 	private Integer nivel=0;
 	
+	public void SubirNivel() {
+		this.nivel = this.nivel+1;
+	}	
+	
 	public void setName(String name) {
 		this.name = name;
 	}
