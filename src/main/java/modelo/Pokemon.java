@@ -8,6 +8,10 @@ public class Pokemon {
 	private Integer nivel=0;
 	
 	public void SubirNivel() {
+		MandaleMecha();
+	}
+	
+	private void MandaleMecha() {
 		this.nivel = this.nivel+1;
 	}	
 	
