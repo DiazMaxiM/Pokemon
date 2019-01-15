@@ -8,13 +8,9 @@ public class Pokemon {
 	private Integer nivel=0;
 	
 	public void SubirNivel() {
-		MandaleMecha();
+		this.setNivel(this.getNivel()+1);
 	}
-	
-	private void MandaleMecha() {
-		this.nivel = this.nivel+1;
-	}	
-	
+		
 	public void setName(String name) {
 		this.name = name;
 	}
@@ -47,7 +43,7 @@ public class Pokemon {
 		return ataque;
 	}
 	
-	public void setNivel(Integer nivel) {
+	private void setNivel(Integer nivel) {
 		this.nivel = nivel;
 	}
 
