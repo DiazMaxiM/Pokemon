@@ -20,6 +20,12 @@ public class PokemonTest {
 	}
 	
 	@Test
+	public void ArrancamosDeNivelCero() {
+		Pokemon maxiPokemon = new Pokemon();
+		Assert.assertEquals(new Integer(0), maxiPokemon.getNivel());
+	}
+	
+	@Test
 	public void SubirNivel() {
 		Pokemon maxiPokemon = new Pokemon();
 		maxiPokemon.SubirNivel();
