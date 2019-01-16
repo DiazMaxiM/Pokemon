@@ -31,4 +31,10 @@ public class PokemonTest {
 		maxiPokemon.SubirNivel();
 		Assert.assertEquals(new Integer(1), maxiPokemon.getNivel());
 	}
+	
+	@Test
+	public void ArrancamosPsCero() {
+		Pokemon maxiPokemon = new Pokemon();
+		Assert.assertEquals(new Integer(0), maxiPokemon.getPs());
+	}
 }

@@ -6,6 +6,7 @@ public class Pokemon {
 	private String defensa;
 	private Integer ataque=0;
 	private Integer nivel=0;
+	private Integer ps=0;
 	
 	public void SubirNivel() {
 		this.setNivel(this.getNivel()+1);
@@ -49,5 +50,13 @@ public class Pokemon {
 
 	public Integer getNivel() {
 		return nivel;
+	}
+	
+	private void setPs(Integer ps) {
+		this.ps = ps;
+	}
+
+	public Integer getPs() {
+		return ps;
 	}
 }
