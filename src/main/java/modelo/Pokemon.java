@@ -8,6 +8,10 @@ public class Pokemon {
 	private Integer nivel=0;
 	private Integer ps=0;
 	
+	public Pokemon(Integer ps) {
+		this.ps = ps;
+	}
+	
 	public void SubirNivel() {
 		this.setNivel(this.getNivel()+1);
 	}
@@ -52,7 +56,7 @@ public class Pokemon {
 		return nivel;
 	}
 	
-	private void setPs(Integer ps) {
+	public void setPs(Integer ps) {
 		this.ps = ps;
 	}
 

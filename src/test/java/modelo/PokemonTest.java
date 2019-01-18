@@ -7,34 +7,40 @@ public class PokemonTest {
 
 	@Test
 	public void SiCreoUnPokemonYLeAsignoComoNombreMaxiYPosteriormenteLePreguntoSuNombreDevuelveMaxitest() {
-		Pokemon maxiPokemon = new Pokemon();
+		Pokemon maxiPokemon = new Pokemon(0);
 		maxiPokemon.setName("maxi");
 		Assert.assertEquals("maxi", maxiPokemon.getName());
 	}
 
 	@Test
 	public void PreguntoElTipo() {
-		Pokemon maxiPokemon = new Pokemon();
+		Pokemon maxiPokemon = new Pokemon(0);
 		maxiPokemon.setTipo("gato");
 		Assert.assertEquals("gato", maxiPokemon.getTipo());
 	}
 	
 	@Test
 	public void ArrancamosDeNivelCero() {
-		Pokemon maxiPokemon = new Pokemon();
+		Pokemon maxiPokemon = new Pokemon(0);
 		Assert.assertEquals(new Integer(0), maxiPokemon.getNivel());
 	}
 	
 	@Test
 	public void SubirNivel() {
-		Pokemon maxiPokemon = new Pokemon();
+		Pokemon maxiPokemon = new Pokemon(0);
 		maxiPokemon.SubirNivel();
 		Assert.assertEquals(new Integer(1), maxiPokemon.getNivel());
 	}
 	
 	@Test
 	public void ArrancamosPsCero() {
-		Pokemon maxiPokemon = new Pokemon();
+		Pokemon maxiPokemon = new Pokemon(0);
 		Assert.assertEquals(new Integer(0), maxiPokemon.getPs());
+	}
+	
+	@Test
+	public void ArrancamosPsdeUsuario() {
+		Pokemon maxiPokemon = new Pokemon(25);
+		Assert.assertEquals(new Integer(25), maxiPokemon.getPs());
 	}
 }
