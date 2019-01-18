@@ -3,15 +3,21 @@ package modelo;
 public class Pokemon {
 	private String name;
 	private String tipo;
-	private String defensa;
+	private Integer defensa=0;
 	private Integer ataque=0;
 	private Integer nivel=0;
 	private Integer ps=0;
 	
-	public Pokemon(Integer ps) {
+	public Pokemon(Integer ps, Integer ataque, Integer defensa) {
 		this.ps = ps;
+		this.ataque = ataque;
+		this.defensa = defensa;
 	}
 	
+	public void atacar(Pokemon pokemon) {
+		pokemon.ps = pokemon.ps - this.ataque + pokemon.defensa;
+	}
+		
 	public void SubirNivel() {
 		this.setNivel(this.getNivel()+1);
 	}
@@ -32,11 +38,11 @@ public class Pokemon {
 		return tipo;
 	}
 
-	public void setDefensa(String defensa) {
+	public void setDefensa(Integer defensa) {
 		this.defensa = defensa;
 	}
 
-	public String getDefensa() {
+	public Integer getDefensa() {
 		return defensa;
 	}
 	
